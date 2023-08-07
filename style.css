@@ -61,7 +61,7 @@
 }
 
 .skills span:hover {
-    opacity: 0.8;
+    filter: brightness(0.8);
     cursor: pointer;
 }
 
@@ -118,7 +118,6 @@
     align-items: center;
     position: relative;
     gap: 10px;
-    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .social-links i {
@@ -138,6 +137,7 @@
 }
 
 #navbar {
+    z-index: 1000;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -148,6 +148,7 @@
     height: 50px;
     width: 100%;
     border-bottom: 1px solid rgb(219, 208, 208);
+    background-color: #ffffff;
 }
 
 #navbar a {
@@ -165,13 +166,16 @@
 }
 
  main {
+    z-index: 1;
+    position: static;
     margin-left: 302px;
     margin-top: 50px;
     padding: 0px 96px;
  }
 
  #aboutMeSection {
-    padding: 36px;
+    padding: 36px 0px;
+    width: 650px;
  }
 
  #aboutMeSection h1 {
@@ -181,5 +185,119 @@
 
  .about-text {
     font-size: 14px;
-    width: 257px;
  }
+
+ main hr {
+    height: 1px;
+    background-color: #ccc;
+ }
+
+ #featuredProjects h1 {
+    padding-top: 36px;
+    padding-bottom: 30px;
+ }
+
+ .web-projects {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 70px;
+ }
+
+.web-projects img {
+    max-width: 340px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.web-projects img:hover {
+    cursor: pointer;
+    filter: brightness(0.7);
+}
+
+.web-projects img:active {
+    opacity: 0.7;
+}
+
+#contactSection {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+#contactSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 36px;
+}
+
+.contact-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #000624;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.cta-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000624;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    opacity: 0.;
+}
+
+
